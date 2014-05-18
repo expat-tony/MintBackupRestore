@@ -162,51 +162,51 @@ or here
 
 http://www.gnu.org/licenses/
 
-This license applies for >>Restore_Linux_Settings V.5.0beta<< as well as >>Backup_Linux_Settings V.3.0<< and all of its
+This license applies for >>Restore_Linux_Settings V.6.0beta<< as well as >>Backup_Linux_Settings V.4.0<< and all of its
 upcoming versions.
 
-#############################################################################
-# Backup_Linux_Settings V.3.0: Makes a zip file of you Linux Mint settings	#
-#                                                                         	#
-# Copyright (C) 2014 Bastian Noller                                       	#
-# email: bastian.noller[-A.T.-]web.de                                     	#
-#                                         								  	#
-#                                                                         	#
+#################################################################################
+# Backup_Linux_Settings V.4.0: Makes a zip file of you Linux Mint settings	#
+#										#
+# Copyright (C) 2014 Bastian Noller						#
+# email: bastian.noller[-A.T.-]web.de						#
+#										#
+#										#
 #    This program is free software: you can redistribute it and/or modify	#
 #    it under the terms of the GNU General Public License as published by	#
 #    the Free Software Foundation, either version 3 of the License, or		#
-#    (at your option) any later version.									#
-#																			#
+#    (at your option) any later version						#
+#										#
 #    This program is distributed in the hope that it will be useful,		#
-#    but WITHOUT ANY WARRANTY; without even the implied warranty of			#
-#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the			#
-#    GNU General Public License for more details.							#
-#																			#
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of		#
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the		#
+#    GNU General Public License for more details.				#
+#										#
 #    You should have received a copy of the GNU General Public License		#
 #    along with this program.  If not, see <http://www.gnu.org/licenses/> 	#
 #                                                                         	#
-#############################################################################
+#################################################################################
 
 #########################################################################################################
-# Restore_Linux_Settings V.5.0beta: Restore Linux Mint settings from >>Backup_Linux_Settings<< script.	#
-#                                                                         								#
-# Copyright (C) 2014 Bastian Noller                                       								#
-# email: bastian.noller[-A.T.-]web.de                                     								#
-#                                         								  								#
-#                                                                   									#
-#    This program is free software: you can redistribute it and/or modify								#
-#    it under the terms of the GNU General Public License as published by								#
-#    the Free Software Foundation, either version 3 of the License, or									#
-#    (at your option) any later version.																#
-#																										#
-#    This program is distributed in the hope that it will be useful,									#
-#    but WITHOUT ANY WARRANTY; without even the implied warranty of										#
-#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the										#
-#    GNU General Public License for more details.														#
-#																										#
-#    You should have received a copy of the GNU General Public License									#
-#    along with this program.  If not, see <http://www.gnu.org/licenses/> 								#
-#                                                                         								#
+# Restore_Linux_Settings V.6.0beta: Restore Linux Mint settings from >>Backup_Linux_Settings<< script.	#
+#                               	   								#
+# Copyright (C) 2014 Bastian Noller            								#
+# email: bastian.noller[-A.T.-]web.de          								#
+#                                         								#
+#                                                        						#
+#    This program is free software: you can redistribute it and/or modify				#
+#    it under the terms of the GNU General Public License as published by				#
+#    the Free Software Foundation, either version 3 of the License, or					#
+#    (at your option) any later version.								#
+#													#
+#    This program is distributed in the hope that it will be useful,					#
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of					#
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the					#
+#    GNU General Public License for more details.							#
+#													#
+#    You should have received a copy of the GNU General Public License					#
+#    along with this program.  If not, see <http://www.gnu.org/licenses/> 				#
+#                                                                         				#
 #########################################################################################################
 
 The full text of the license is listed below:
