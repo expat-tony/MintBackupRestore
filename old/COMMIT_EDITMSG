@@ -1,0 +1,26 @@
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+#
+# Initial commit
+#
+# Changes to be committed:
+#   (use "git rm --cached <file>..." to unstage)
+#
+#	new file:   Backup_Linux_Settings_v3.sh
+#	new file:   Backup_Restore_Linux_Settings_v3+v5beta.zip
+#	new file:   README_v3.txt
+#	new file:   Restore_Linux_Settings_v5beta.sh
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	Werbung_Deu
+#	old/
+This is the first version of the script files >>Backup_Linux_Settings<< and >>Restore_Linux_Settings<<.  I hope that these two bash scripts will facilitate the migration to newer Linux versions
+without loosing the settings of the former version. I hope they will be continuously improved by the community over time. Note that both files have been tested on my system and worked flawlessly,
+the >>Restore_Linux_Settings<< script is still in beta stage. 
+
+Have fun,
+Mint_BackupRestore
