@@ -10,7 +10,6 @@ Overview:
 
 
 
-
 1.) Introduction: For what are these scripts good for?
 ------------------------------------------------------------------------------------
 Linux Mint is a great operating system, but since updates are frequent, maintaining 
@@ -28,9 +27,9 @@ tweaks you have done to the system.
 b.) Restore_Linux_Settings
 Script which restores these "settings" into your new freshly installed Linux Mint.
  
- 
- 
- 2.) How to use the scripts
+
+
+2.) How to use the scripts
  ------------------------------------------------------------------------------------
  >>Backup_Linux_Settings<<
  a.) download both scripts and store them wherever you like
@@ -88,6 +87,8 @@ http://rsync.samba.org/ftp/rsync/rsync.html
 http://www.dotnetperls.com/7-zip-examples
 http://flyingtomoon.com/2012/04/04/unzip-a-specific-folder-of-a-compressed-file-exclude-some-folders-from-extraction/
 http://readwrite.com/2013/10/02/github-for-beginners-part-2#awesm=~oEBUQPMUDkYjD6
+
+
 
 
 4.) Frequently asked questions (FAQs) & Possible upcoming questions (PUQs)
