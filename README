@@ -35,11 +35,11 @@ Script which restores these "settings" into your new freshly installed Linux Min
  >>Backup_Linux_Settings<<
  a.) download both scripts and store them wherever you like
  b.) take your standard editor (in Linux Mint it's >>Pluma<<) and open the file (or just 
-	 click on it and select "Display")
+     click on it and select "Display")
  c.) modify the "destination" were you want to store your backups in the file(line 31 in 
-	 backup script). In my case this is "/media/Daten/Linux_Backup/". Please don't make
-	 the mistake to backup into the same partition you will install the new Linux version
-	 later on.
+     backup script). In my case this is "/media/Daten/Linux_Backup/". Please don't make
+     the mistake to backup into the same partition you will install the new Linux version
+     later on.
  d.) start the script in your terminal with > sudo bash Backup_Linux_Settings_v3.sh
      Please make sure you are in the same folder as the script is.
 	 
@@ -47,10 +47,10 @@ a.), b.), c.) you only have to do once in your life. d.) you do every time you w
 
  >>Restore_Linux_Settings<<
  a.) take your standard editor (in Linux Mint it's >>Pluma<<) and open the file (or just click on
-	 it and select "Display"). 
+     it and select "Display"). 
  b.) modify the folder were you have stored your backups (source). You can find this setting in 
-	 line 32 of the restore script. Note you only should define the path (e.g. "/media/Daten/Linux_Backup/")
-	 and NOT the file (e.g., do NOT do: "/media/Daten/Linux_Backup/mybackup.zip")
+     line 32 of the restore script. Note you only should define the path (e.g. "/media/Daten/Linux_Backup/")
+     and NOT the file (e.g., do NOT do: "/media/Daten/Linux_Backup/mybackup.zip")
  c.) start the script in your terminal with > sudo bash Restore_Linux_Settings_v5beta.sh
      Please make sure you are in the same folder as the script is.
  d.) follow the directions on the screen.
