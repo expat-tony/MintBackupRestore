@@ -1,6 +1,6 @@
 #!/bin/bash
 #####################################################################################################
-# Restore_Linux_Settings V.5.0beta: Restore Linux Mint settings from >>Backup_Linux_Settings<< script.	#                                          	
+# Restore_Linux_Settings V.7.0beta: Restore Linux Mint settings from >>Backup_Linux_Settings<< script.	#                                          	
 #                                                                         							#
 # Copyright (C) 2014 Bastian Noller                                       							#
 # email: bastian.noller[-A.T.-]web.de                                     							#
