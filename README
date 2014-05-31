@@ -182,6 +182,57 @@ Please see answer d.) above. I is just for security. If you don't want to set a 
 without entering anything. And yes, you have to remember your password if you want to restore.
 
 
+g.) Is this script really stable?
+
+The "backup script" is very stable. I have used it many many times on different Linux versions. It is also not
+possible to make any damages with this script. Thus I released it as stable. Since it produces a zip file you can 
+open it later on by hand and restore by hand. 
+The "restore script" I released as beta, because it really makes changes to your system. I have used it also many times
+without any problems, but I cant 100% assure that this is true on each and every computer in this world. 
+If you want to be very safe you can use the backup script first on the new installed distro.
+Then if the restore script makes some changes you don't like you can restore the backup of the new system. 
+Also the current version of the restore script has several restore options (you will be asked this during restore process). 
+I would not use the "restore all settings" option when moving to a new version. The second option only restores selected settings. 
+This is already much safer. But you can also just restore Firefox and Thunderbird. This is also very safe (for your system) 
+but of course you don't get back everything. Thus it would be great if a lot of people are willing to test the beta script. The more
+positive or negative feedback I get, the more I can improve the scripts. If you want to be 100% safe you can use Clonezilla 
+(http://clonezilla.org/) to make an image of your fresh installed Linux version. Then if my script unexpectedly does something 
+completely wrong when playing in the old settings of the former Linux  version, you can reinstall the image in 10 min and everything
+is back 100% to the fresh install.
+
+BTW, I also do not recommend the script to make backups of your data! The scripts are intended to backup and restore the 
+settings (even if the entire home folder will be backed up with the script.)
+
+h.) What does the script back up?
+
+It backs up the entire "home" folder, the entire "etc" folder (in encrypted form), a list of all of your installed packages,
+a list of the most important installed packages (e.g., without development packages), your repro keys and your sources lists 
+(take a look at the script it is easy to read).
+
+i.) You as the scriptwriter, how much did you used the script and how many times performed a successful backup and restore?
+
+I didn't count but maybe 20-40 times (Mint 16)? What I am missing is more beta testers on other systems...go for it.
+But I have used the same commands that are used in the scripts to recover settings from Linux Mint 13 to Linux Mint 16. 
+This scripts are intended to speed it up.
+
+j.) Would you use this for the upcoming Linux Mint 17?
+
+Yes, just waiting for the final release of Mint 17.
+
+k.) What flavor of Linux Mint do you prefer (Cinnamon, Mate or others)?
+
+I personally like Mate.
+
+l.) Based on the content of your README in GitHub, you said that the zip extracts without the owner of the files. 
+Does this ever caused a conflict in your tests?
+
+No not yet. The copy function the script uses, copies the files with the correct rights, the owners it takes from the files 
+that are already there. This is a very good question, because this could be a weakness of the scripts. But only if the setting
+file you restore is not there in the new system. But if it is not there in the new system then the new system will most 
+likely not need it anyway. If someone has an idea to save the rights AND owners when backing up then please post 
+it as "new idea". A possibility could be to move away from the zip-format to 7zip or tar.
+
+
 
 
 5.) Contact information of the author
@@ -198,7 +249,8 @@ af73bfe13e2259cd9ee49e893eb76469  Backup_Linux_Settings_v3.sh (obsolete)
 e88780ab134dbf6b5eb11fad3488a52d  Restore_Linux_Settings_v5beta.sh (obsolete)
 20ae409a6456f88593a77b8c42c643f4  Backup_Linux_Settings_v4.sh
 d8223f21adc5752406fb5bb3039f68fa  Restore_Linux_Settings_v6beta.sh (obsolete)
-248baeb87f43c309ec767b09e89a1fc2  Restore_Linux_Settings_v7beta.sh
+248baeb87f43c309ec767b09e89a1fc2  Restore_Linux_Settings_v7beta.sh (obsolete)
+65be2c1c5a35e67bb95466c2441092c6  Restore_Linux_Settings_v8beta.sh
 
 
 
