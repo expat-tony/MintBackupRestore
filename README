@@ -50,7 +50,7 @@ a.), b.), c.) you only have to do once in your life. d.) you do every time you w
  b.) modify the folder were you have stored your backups (source). You can find this setting in 
 	 line 32 of the restore script. Note you only should define the path (e.g. "/media/Daten/Linux_Backup/")
 	 and NOT the file (e.g., do NOT do: "/media/Daten/Linux_Backup/mybackup.zip")
- c.) start the script in your terminal with > sudo bash Restore_Linux_Settings_v8beta.sh
+ c.) start the script in your terminal with > sudo bash Restore_Linux_Settings_v9beta.sh
      Please make sure you are in the same folder as the script is. Also take a look at the screenshot
 	 provided.
  d.) follow the directions on the screen.
