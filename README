@@ -237,9 +237,9 @@ l.) Based on the content of your README in GitHub, you said that the zip extract
 Does this ever caused a conflict in your tests?
 
 No not yet. The copy function the script uses, copies the files with the correct rights, the owners it takes from the files 
-that are already there. This is a very good question, because this could be a weakness of the scripts. But only if the setting
-file you restore is not there in the new system. But if it is not there in the new system then the new system will most 
-likely not need it anyway. If someone has an idea to save the rights AND owners when backing up then please post 
+that are already there. This could be a weakness of the scripts. But only if the setting
+file you restore is not there in the new system. On the other hand, if it is not there in the new system then the new system will most 
+likely not need it anyway. If someone has a neat idea to save the rights AND owners when backing up with zip then please post 
 it as "new idea". A possibility could be to move away from the zip-format to 7zip or tar. But so far there are no 
 complaints worldwide that the script does not work as intended (status 01.06.2014). An I have also not encountered
 any difficulties. Still I release the restore script at beta, just to be correct. The project is still relatively 
