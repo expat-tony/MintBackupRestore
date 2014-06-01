@@ -298,7 +298,12 @@ How do you correct this (quick bug fix):
 You can proceed similar with other files that have the wrong owners.
 But it is annoying and I will fix this bug ASAP.
 
-
+- When restoring your former fstab there can be an issue: If you install the new
+Mint version into the same partition as your former Linux distribution,
+Linux Mint 17 will format that partition. By doing this it changes the UUID of
+that partition. When you restore your fstab from your former version be sure to
+update the UUID of the formated partition. All other settings in the fstab will stay
+correct. 
 
 
 
