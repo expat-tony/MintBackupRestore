@@ -265,7 +265,11 @@ e88780ab134dbf6b5eb11fad3488a52d  Restore_Linux_Settings_v5beta.sh (obsolete)
 20ae409a6456f88593a77b8c42c643f4  Backup_Linux_Settings_v4.sh
 d8223f21adc5752406fb5bb3039f68fa  Restore_Linux_Settings_v6beta.sh (obsolete)
 248baeb87f43c309ec767b09e89a1fc2  Restore_Linux_Settings_v7beta.sh (obsolete)
-65be2c1c5a35e67bb95466c2441092c6  Restore_Linux_Settings_v8beta.sh
+65be2c1c5a35e67bb95466c2441092c6  Restore_Linux_Settings_v8beta.sh (obsolete)
+09484f1f5739388ef26ba877ed86408b  Restore_Linux_Settings_v9beta.sh
+
+
+
 
 
 7.) CAUTION: Upgrading from Linux Mint 16 to Mint 17 (Bugs)
