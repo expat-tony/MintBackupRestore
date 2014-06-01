@@ -216,9 +216,11 @@ a list of the most important installed packages (e.g., without development packa
 
 i.) You as the scriptwriter, how much did you used the script and how many times performed a successful backup and restore?
 
-I didn't count but maybe 20-40 times (Mint 16)? What I am missing is more beta testers on other systems...go for it.
-But I have used the same commands that are used in the scripts to recover settings from Linux Mint 13 to Linux Mint 16. 
-This scripts are intended to speed it up.
+I didn't count but maybe 20-40 times (Mint 16)? What I am missing are even more beta testers on other systems...go for it.
+It works stable and fine on my system.
+Additionally, I have used the same commands that are used in the scripts to recover settings from Linux Mint 13 to Linux Mint 16. 
+This scripts are intended to speed it up and you don't longer have to remember all the commands and Google for hours
+how to find the right way to do it.
 
 
 j.) Would you use this for the upcoming Linux Mint 17?
