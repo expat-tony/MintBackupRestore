@@ -261,9 +261,8 @@ d8223f21adc5752406fb5bb3039f68fa  Restore_Linux_Settings_v6beta.sh (obsolete)
 248baeb87f43c309ec767b09e89a1fc2  Restore_Linux_Settings_v7beta.sh (obsolete)
 65be2c1c5a35e67bb95466c2441092c6  Restore_Linux_Settings_v8beta.sh (obsolete)
 09484f1f5739388ef26ba877ed86408b  Restore_Linux_Settings_v9beta.sh (obsolete, last restore version that used zip-format)
-								  Restore_Linux_Settings_v10beta.sh
-								  Backup_Linux_Settings_v10.sh
-
+e9804240e8de28102a23ad64383e9633  Backup_Linux_Settings_v10.sh
+b4a02af468c5b9e85c630395010bb62c  Restore_Linux_Settings_v10beta.sh
 
 
 
