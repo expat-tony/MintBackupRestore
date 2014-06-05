@@ -87,7 +87,6 @@ do
 						echo "Unzipping files into that directory. This can take some time, please be patient."
 						sleep 3
 						7za x -so $FILENAME | tar xpf - -C $temp_dir
-						exit
 						echo "Unzipping complete!"
 						echo "Getting back your former software packages."
 						sleep 3
@@ -134,7 +133,6 @@ do
 						echo "Unzipping files into that directory. This can take some time, please be patient."
 						sleep 3
 						7za x -so $FILENAME | tar xpf - -C $temp_dir
-						exit
 						echo "Unzipping complete!"
 						echo "Getting back your former software packages."
 						sleep 3
@@ -181,7 +179,6 @@ do
 						echo "Unzipping files into that directory. This can take some time, please be patient."
 						sleep 3
 						7za x -so $FILENAME | tar xpf - -C $temp_dir
-						exit
 						echo "Unzipping complete!"
 						echo "Getting back your former software packages."
 						sleep 3
@@ -242,7 +239,6 @@ do
 						sleep 3
 						7za x -so $FILENAME | tar xpf - -C $temp_dir --wildcards "Installed_Programs/*"
 						echo "Unzipping complete!"
-						exit
 						echo "Getting back your former software packages."
 						sleep 3
 						# PUT SCRIPT HERE TO RESTORE PACKAGES
