@@ -1,4 +1,4 @@
-04th of June, 2014
+05th of June, 2014
 Overview:
 
 1.) Introduction: For what are these scripts good for?
@@ -134,7 +134,8 @@ if you have your data there. If you want to have that script too, just write me.
 
 b.) Why do you backup so much stuff using  >>Backup_Linux_Settings<< and not just what you need?
 
-Well the backup will be around 220 Mb big, if you have no personal data in your home folder. 
+Well the backup will be around 10 Mb big, if you have no personal data in your home folder. And 210 Mb
+big if you have a lot of emails. Of course if you store all your data in the home folder, the backup will be bigger.
 Considering that today's hard drives have 2Tb and above I thought backup as many settings as Linux has. 
 That way we don't miss anything. It's true that the  >>Restore_Linux_Settings<< script only cherry picks 
 the most important settings. But the script will ask you if you want to restore everything and if you are
@@ -262,7 +263,9 @@ d8223f21adc5752406fb5bb3039f68fa  Restore_Linux_Settings_v6beta.sh (obsolete)
 65be2c1c5a35e67bb95466c2441092c6  Restore_Linux_Settings_v8beta.sh (obsolete)
 09484f1f5739388ef26ba877ed86408b  Restore_Linux_Settings_v9beta.sh (obsolete, last restore version that used zip-format)
 e9804240e8de28102a23ad64383e9633  Backup_Linux_Settings_v10.sh
-b4a02af468c5b9e85c630395010bb62c  Restore_Linux_Settings_v10beta.sh
+b4a02af468c5b9e85c630395010bb62c  Restore_Linux_Settings_v10beta.sh (obsolete)
+97624b96b0915112607bd20b75c70aee  Restore_Linux_Settings_v11beta.sh (obsolete)
+9a977831adae3910d67bb39e69fbf33e  Restore_Linux_Settings_v12beta.sh
 
 
 
@@ -289,6 +292,9 @@ Backup Version 10:		Major change from version 9. Completely new backup format (.
 Restore Version 10: 	Major change from version 9. Completely new backup format (.tar.7zip). 
 						A little more conservative when restoring. All other options stay unchanged.
 						New option (request from user) restore everything without home.
+Restore Version 12:		Fixed issue that the script didn't initiate the restore process (still included exit command 
+						after restoring into temp directory for debugging). Included new option to restore only selected settings
+						without home folder. This is important if you keep your home folder on a separate partition anyway.
 
 						
 						
@@ -327,6 +333,12 @@ You can proceed similar with other files or folders that have the wrong owners.
 But it was annoying and thus Version 10 was developed, which fixes this owners 
 issue completely by using tar archives.
 
+Version 10:
+Script didn't initiate the restore process (still included exit command 
+after restoring into temp directory for debugging during development).
+Thus removed the exit command after unzipping.
+
+Version 10 and above:
 Not a real bug but just a hint:
 Old versions 1-9 and newer versions 10 and above:
 - When restoring your former fstab there can be an "issue": If you install the new
