@@ -345,7 +345,8 @@ Old versions 1-9 and newer versions 10 and above:
 Mint version into the same partition as your former Linux distribution,
 Linux Mint 17 will format that partition. By doing this it changes the UUID of
 that partition. When you restore your fstab from your former version be sure to
-update the UUID of the formatted partition in the fstab file. All other settings 
-in the fstab will stay correct. 
+update the UUID in the fstab file, since your freshly formatted partition will have
+a new UUID. All other settings in the fstab will stay correct. Otherwise you will
+get an error message upon booting. Even though the system still boots normally. 
 
 
