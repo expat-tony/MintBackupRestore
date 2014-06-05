@@ -41,7 +41,8 @@ Script which restores these "settings" into your new freshly installed Linux Min
 	 backup script). In my case this is "/media/Daten/Linux_Backup/". Please don't make
 	 the mistake to backup into the same partition you will install the new Linux version
 	 later on.
- d.) start the script by double clicking on it and select "run in terminal".
+ d.) start the script in your terminal with > bash Backup_Linux_Settings_v11.sh
+     Please make sure you are in the same folder as the script is.
 	 
 a.), b.), c.) you only have to do once in your life. d.) you do every time you want to backup
 
@@ -51,7 +52,9 @@ a.), b.), c.) you only have to do once in your life. d.) you do every time you w
  b.) modify the folder were you have stored your backups (source). You can find this setting in 
 	 line 32 of the restore script. Note you only should define the path (e.g. "/media/Daten/Linux_Backup/")
 	 and NOT the file (e.g., do NOT do: "/media/Daten/Linux_Backup/mybackup.zip")
- c.) start the script by double clicking on it and select "run in terminal". 
+ c.) start the script in your terminal with > bash Restore_Linux_Settings_v15beta.sh
+     Please make sure you are in the same folder as the script is. Also take a look at the screenshot
+	 provided.
  d.) follow the directions on the screen. Also take a look at the screenshot provided.
  
 NOTE: At one point you will be asked "to restore all settings" or "to restore only selected settings". 
@@ -264,20 +267,29 @@ b4a02af468c5b9e85c630395010bb62c  Restore_Linux_Settings_v10beta.sh (obsolete)
 97624b96b0915112607bd20b75c70aee  Restore_Linux_Settings_v11beta.sh (obsolete)
 9a977831adae3910d67bb39e69fbf33e  Restore_Linux_Settings_v12beta.sh (obsolete)
 25cac892db55605ec4c4c0fbc2650133  Restore_Linux_Settings_v13beta.sh (obsolete)
-c3059db72688899a342b85b5a6c08009  Restore_Linux_Settings_v14beta.sh
+c3059db72688899a342b85b5a6c08009  Restore_Linux_Settings_v14beta.sh (obsolete)
+
 6f8cb78a8a66b7521c7e2678d8da0040  Backup_Linux_Settings_v11.sh
+f0c9161c6f77d23a927eb46546e7026a  Restore_Linux_Settings_v16beta.sh
 
 
 7.) Upgrading from Linux Mint 16 to Mint 17 (experience)
 ------------------------------------------------------------------------------------ 
-- When restoring your former fstab there can be an issue: If you install the new
++++No real bugs or issues currently reported with current versions of the scripts.
++++ When restoring your former fstab please note: If you install the new
 Mint version into the same partition as your former Linux distribution,
 Linux Mint 17 will format that partition. By doing this it changes the UUID of
 that partition. When you restore your fstab from your former version be sure to
 update the UUID of the formatted partition in the fstab file. All other settings 
-in the fstab will stay correct. 
-- Sine version 10 of the backup restore/scripts all rights and owners of the files
- stay unchanged.
+in the fstab will stay correct. The script offers help here and shows the current 
+correct UUIDs if you want.
++++ Since version 16 of the restore script, the script will help you update your former
+fstab file with the correct UUIDs (it will still restore the old fstab but give you 
+a list of current correct UUIDs and opens the restored /etc/fstab file with pluma, 
+if you want.)
++++ Since version 10 of the backup restore/scripts all rights and owners of the files
+stay unchanged.
+
 
  
  
@@ -297,13 +309,16 @@ Restore Version 12:		Fixed issue that the script didn't initiate the restore pro
 Restore Version 13:		Some minor fixes after testing all different restore options on Mint 16 (some weren't working). 
 						Script can be started by double clicking on it + run in terminal. Will automatically prompt for sudo.
 Backup Version 11:		Script can be started by double clicking on it + run in terminal. Will automatically prompt for sudo
+Restore Version 16:		New restore options: Only fstab and only desktop links. Script now offers assistance to set up fstab.	
+						(it will still restore the old fstab but give you a list of current correct UUIDs and opens the restored
+						/etc/fstab file with pluma, if you want.). Tested several times when moving from Mint 16 to 17.
 
 						
 						
 
 9.) Identified bugs of FORMER versions
 ------------------------------------------------------------------------------------ 
-Old Versions 1-9:
+++++ Old Versions 1-9:
 The backup and restore scripts Version 1-9 worked perfectly when used within one 
 version (e.g., Mint 16). But there was a list of hiccups that had to be fixed
  when transferring from Mint 16 to 17 (sorry for any inconveniences):
@@ -335,24 +350,25 @@ You can proceed similar with other files or folders that have the wrong owners.
 But it was annoying and thus Version 10 was developed, which fixes this owners 
 issue completely by using tar archives.
 
-Version 10:
+++++ Version 10:
 Script didn't initiate the restore process (still included exit command 
 after restoring into temp directory for debugging during development).
 Thus removed the exit command after unzipping.
 
-Version 11 and 12:
+++++ Version 11 and 12:
 some restore options were not working due to new naming --> had to be updated
 in array.
 
-Version 10 and above:
+++++ Old versions 1-9 and newer versions 10 and above:
 Not a real bug but just a hint:
-Old versions 1-9 and newer versions 10 and above:
+
 - When restoring your former fstab there can be an "issue": If you install the new
 Mint version into the same partition as your former Linux distribution,
 Linux Mint 17 will format that partition. By doing this it changes the UUID of
 that partition. When you restore your fstab from your former version be sure to
 update the UUID in the fstab file, since your freshly formatted partition will have
 a new UUID. All other settings in the fstab will stay correct. Otherwise you will
-get an error message upon booting. Even though the system still boots normally. 
+get an error message upon booting. Even though the system still boots normally.
+Since version 16 of the restore script the script helps you to make the correct UUID settings. 
 
 
