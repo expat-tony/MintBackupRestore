@@ -265,7 +265,9 @@ d8223f21adc5752406fb5bb3039f68fa  Restore_Linux_Settings_v6beta.sh (obsolete)
 e9804240e8de28102a23ad64383e9633  Backup_Linux_Settings_v10.sh
 b4a02af468c5b9e85c630395010bb62c  Restore_Linux_Settings_v10beta.sh (obsolete)
 97624b96b0915112607bd20b75c70aee  Restore_Linux_Settings_v11beta.sh (obsolete)
-9a977831adae3910d67bb39e69fbf33e  Restore_Linux_Settings_v12beta.sh
+9a977831adae3910d67bb39e69fbf33e  Restore_Linux_Settings_v12beta.sh (obsolete)
+25cac892db55605ec4c4c0fbc2650133  Restore_Linux_Settings_v13beta.sh
+
 
 
 
@@ -295,6 +297,8 @@ Restore Version 10: 	Major change from version 9. Completely new backup format (
 Restore Version 12:		Fixed issue that the script didn't initiate the restore process (still included exit command 
 						after restoring into temp directory for debugging). Included new option to restore only selected settings
 						without home folder. This is important if you keep your home folder on a separate partition anyway.
+Restore Version 13:		Some minor fixes after testing all different restore options on Mint 16 (some weren't working). 
+						Script can be started by double clicking on it + run in terminal. Will automatically prompt for sudo.	
 
 						
 						
@@ -337,6 +341,10 @@ Version 10:
 Script didn't initiate the restore process (still included exit command 
 after restoring into temp directory for debugging during development).
 Thus removed the exit command after unzipping.
+
+Version 11 and 12:
+some restore options were not working due to new naming --> had to be updated
+in array.
 
 Version 10 and above:
 Not a real bug but just a hint:
