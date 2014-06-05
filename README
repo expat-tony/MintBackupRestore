@@ -41,8 +41,7 @@ Script which restores these "settings" into your new freshly installed Linux Min
 	 backup script). In my case this is "/media/Daten/Linux_Backup/". Please don't make
 	 the mistake to backup into the same partition you will install the new Linux version
 	 later on.
- d.) start the script in your terminal with > sudo bash Backup_Linux_Settings_v10.sh
-     Please make sure you are in the same folder as the script is.
+ d.) start the script by double clicking on it and select "run in terminal".
 	 
 a.), b.), c.) you only have to do once in your life. d.) you do every time you want to backup
 
@@ -52,10 +51,8 @@ a.), b.), c.) you only have to do once in your life. d.) you do every time you w
  b.) modify the folder were you have stored your backups (source). You can find this setting in 
 	 line 32 of the restore script. Note you only should define the path (e.g. "/media/Daten/Linux_Backup/")
 	 and NOT the file (e.g., do NOT do: "/media/Daten/Linux_Backup/mybackup.zip")
- c.) start the script in your terminal with > sudo bash Restore_Linux_Settings_v10beta.sh
-     Please make sure you are in the same folder as the script is. Also take a look at the screenshot
-	 provided.
- d.) follow the directions on the screen.
+ c.) start the script by double clicking on it and select "run in terminal". 
+ d.) follow the directions on the screen. Also take a look at the screenshot provided.
  
 NOTE: At one point you will be asked "to restore all settings" or "to restore only selected settings". 
 If you have changed the Distribution (e.g, from Linux Mint Maya 13 to Mint Petra 16) it is strongly 
@@ -262,13 +259,13 @@ d8223f21adc5752406fb5bb3039f68fa  Restore_Linux_Settings_v6beta.sh (obsolete)
 248baeb87f43c309ec767b09e89a1fc2  Restore_Linux_Settings_v7beta.sh (obsolete)
 65be2c1c5a35e67bb95466c2441092c6  Restore_Linux_Settings_v8beta.sh (obsolete)
 09484f1f5739388ef26ba877ed86408b  Restore_Linux_Settings_v9beta.sh (obsolete, last restore version that used zip-format)
-e9804240e8de28102a23ad64383e9633  Backup_Linux_Settings_v10.sh
+e9804240e8de28102a23ad64383e9633  Backup_Linux_Settings_v10.sh (obsolete)
 b4a02af468c5b9e85c630395010bb62c  Restore_Linux_Settings_v10beta.sh (obsolete)
 97624b96b0915112607bd20b75c70aee  Restore_Linux_Settings_v11beta.sh (obsolete)
 9a977831adae3910d67bb39e69fbf33e  Restore_Linux_Settings_v12beta.sh (obsolete)
-25cac892db55605ec4c4c0fbc2650133  Restore_Linux_Settings_v13beta.sh
-
-
+25cac892db55605ec4c4c0fbc2650133  Restore_Linux_Settings_v13beta.sh (obsolete)
+c3059db72688899a342b85b5a6c08009  Restore_Linux_Settings_v14beta.sh
+6f8cb78a8a66b7521c7e2678d8da0040  Backup_Linux_Settings_v11.sh
 
 
 7.) Upgrading from Linux Mint 16 to Mint 17 (experience)
@@ -298,7 +295,8 @@ Restore Version 12:		Fixed issue that the script didn't initiate the restore pro
 						after restoring into temp directory for debugging). Included new option to restore only selected settings
 						without home folder. This is important if you keep your home folder on a separate partition anyway.
 Restore Version 13:		Some minor fixes after testing all different restore options on Mint 16 (some weren't working). 
-						Script can be started by double clicking on it + run in terminal. Will automatically prompt for sudo.	
+						Script can be started by double clicking on it + run in terminal. Will automatically prompt for sudo.
+Backup Version 11:		Script can be started by double clicking on it + run in terminal. Will automatically prompt for sudo
 
 						
 						
