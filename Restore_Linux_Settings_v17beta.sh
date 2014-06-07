@@ -393,7 +393,7 @@ do
 						# PUT SCRIPT HERE TO DECOMPRESS
 						echo "Unzipping files into that directory. This can take some time, please be patient."
 						sleep 3
-						7za x -so $FILENAME | tar xpf - -C $temp_dir --wildcards "Installed_Programs/*" "etc/*"
+						7za x -so $FILENAME | tar xpf - -C $temp_dir "Installed_Programs/" "etc/"
 						echo "Unzipping complete!"
 						echo "Getting back your former software packages."
 						sleep 3
@@ -500,7 +500,7 @@ do
 						# PUT SCRIPT HERE TO DECOMPRESS
 						echo "Unzipping files into that directory. This can take some time, please be patient."
 						sleep 3
-						7za x -so $FILENAME | tar xpf - -C $temp_dir --wildcards "Installed_Programs/*"
+						7za x -so $FILENAME | tar xpf - -C $temp_dir "Installed_Programs/"
 						echo "Unzipping complete!"
 						echo "Getting back your former software packages."
 						sleep 3
@@ -548,7 +548,7 @@ do
 						echo "Putting your old Firefox and Thunderbird settings back to were you like them."
 						sleep 2
 						#dont worry: we have extracted only the thunderbird and mozilla folder into $temp_dir. Hence we can restore the complete temporary home.
-						cp -rv --preserve=ownership,timestamps,mode $temp_dir/home/ /
+						cp -rv --no-preserve=ownership --preserve=timestamps,mode $temp_dir/home/ /
 						echo "...Firefox and Thunderbird settings restore complete"
 						echo ""
 						echo "Deleting temporary directory:"
@@ -583,7 +583,7 @@ do
 						echo "Putting your Thunderbird settings back to were you like them."
 						sleep 3
 						#dont worry: we have extracted only the thunderbird folder into $temp_dir. Hence we can restore the complete temporary home.
-						cp -rv --preserve=ownership,timestamps,mode $temp_dir/home/ /
+						cp -rv --no-preserve=ownership --preserve=timestamps,mode $temp_dir/home/ /
 						echo "...Thunderbird settings restore complete"
 						echo ""
 						echo "Deleting temporary directory:"
@@ -618,7 +618,7 @@ do
 						echo "Putting your old Firefox settings back to how you like them."
 						sleep 3
 						#dont worry: we have extracted only the mozilla folder into $temp_dir. Hence we can restore the complete temporary home.
-						cp -rv --preserve=ownership,timestamps,mode $temp_dir/home/ /
+						cp -rv --no-preserve=ownership --preserve=timestamps,mode $temp_dir/home/ /
 						echo "...Firefox settings restore complete"
 						echo ""
 						echo "Deleting temporary directory:"
@@ -722,7 +722,7 @@ do
 						echo "Putting your former desktop links back to how you like them."
 						sleep 3
 						#dont worry: we have extracted only the home/*/Desktop/* folder into $temp_dir. Hence we can restore the complete temporary folder.
-						cp -rv --preserve=ownership,timestamps,mode $temp_dir/home/ /
+						cp -rv --no-preserve=ownership --preserve=timestamps,mode $temp_dir/home/ /
 						echo "...desktop links restore complete"
 						echo ""
 						echo "Deleting temporary directory:"
