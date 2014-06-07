@@ -371,4 +371,15 @@ a new UUID. All other settings in the fstab will stay correct. Otherwise you wil
 get an error message upon booting. Even though the system still boots normally.
 Since version 16 of the restore script the script helps you to make the correct UUID settings. 
 
+++++Version 16 restore script:
+Not a bug in the scripts but of tar (http://www.gnu.org/software/tar/).
+The script restores some files using the --wildcards option of tar. Unfortunately, then the 
+tar command doesn't preserve the owners despite the -p option is activated.
+Example for restoring only the desktop:
+7za x -so $FILENAME | tar xpf - -C $temp_dir --wildcards "home/*/Desktop/*"
+Bug has been reported to GNU.
+Version 17 of the script tries to avoid the --wildcards function as much as possible.
+
+
+
 
