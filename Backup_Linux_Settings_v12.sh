@@ -1,6 +1,6 @@
 #!/bin/bash
 #################################################################################
-# Backup_Linux_Settings V.11: Makes a tar.7zip file of you Linux Mint settings	#
+# Backup_Linux_Settings V.12: Makes a tar.7zip file of you Linux Mint settings	#
 #                                                                         		#
 # Copyright (C) 2014 Bastian Noller                                       		#
 # email: bastian.noller[-A.T.-]web.de                                     		#
@@ -46,7 +46,6 @@ echo "Checking if necessary packages are available on your PC to run this script
 
 dpkg -l p7zip > /dev/null 2>&1
 INSTALLED=$?
-
 if [ $INSTALLED == '0' ]; then
 		echo ""		
 		echo "+ 7zip compression is installed on your system (7za command available) --> OK"
@@ -61,7 +60,6 @@ fi
 
 dpkg -l tar > /dev/null 2>&1
 INSTALLED=$?
-
 if [ $INSTALLED == '0' ]; then
 		echo "+ tar container format is installed on your system (tar command available) --> OK"
 else
@@ -75,7 +73,6 @@ fi
 
 dpkg -l grep > /dev/null 2>&1
 INSTALLED=$?
-
 if [ $INSTALLED == '0' ]; then
 		echo "+ grep is installed on your system (grep command available) --> OK"
 else
@@ -98,7 +95,7 @@ compression_rate="2" # smaller values --> larger file size but faster
 bold=`tput bold`
 normal=`tput sgr0`
 echo "#########################################################"
-echo "This is Version 11 of the Backup Script"
+echo "This is Version 12 of the Backup Script"
 echo "#########################################################"
 echo "${bold}NEW:${normal} uses *.tar.7zip backup archive."
 echo "This is only compatible with restore script version 10 or higher." 
