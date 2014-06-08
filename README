@@ -1,4 +1,4 @@
-07th of June, 2014
+08th of June, 2014
 Overview:
 
 1.) Introduction: For what are these scripts good for?
@@ -272,8 +272,9 @@ c3059db72688899a342b85b5a6c08009  Restore_Linux_Settings_v14beta.sh (obsolete)
 f0c9161c6f77d23a927eb46546e7026a  Restore_Linux_Settings_v16beta.sh (ok, but tar --wildcards issue)
 6f8cb78a8a66b7521c7e2678d8da0040  Backup_Linux_Settings_v11.sh (obsolete)
 
-c2aa0300549262868532adc4bd6cb4d4  Backup_Linux_Settings_v12.sh
+4000a1989f398a81341eb9618a83721a  Backup_Linux_Settings_v12.sh
 16d1fa7b2c5eaa92a59d4ffc57534f1c  Restore_Linux_Settings_v17beta.sh
+
 
 
 
