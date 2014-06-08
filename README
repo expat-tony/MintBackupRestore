@@ -93,6 +93,7 @@ http://flyingtomoon.com/2012/04/04/unzip-a-specific-folder-of-a-compressed-file-
 http://readwrite.com/2013/10/02/github-for-beginners-part-2#awesm=~oEBUQPMUDkYjD6
 http://linux.die.net/man/1/tar
 http://tukaani.org/lzma/benchmarks.html
+http://www.servercobra.com/bash-check-if-package-is-installed/
 
 
 
@@ -269,8 +270,9 @@ b4a02af468c5b9e85c630395010bb62c  Restore_Linux_Settings_v10beta.sh (obsolete)
 25cac892db55605ec4c4c0fbc2650133  Restore_Linux_Settings_v13beta.sh (obsolete)
 c3059db72688899a342b85b5a6c08009  Restore_Linux_Settings_v14beta.sh (obsolete)
 f0c9161c6f77d23a927eb46546e7026a  Restore_Linux_Settings_v16beta.sh (ok, but tar --wildcards issue)
+6f8cb78a8a66b7521c7e2678d8da0040  Backup_Linux_Settings_v11.sh (obsolete)
 
-6f8cb78a8a66b7521c7e2678d8da0040  Backup_Linux_Settings_v11.sh
+c2aa0300549262868532adc4bd6cb4d4  Backup_Linux_Settings_v12.sh
 16d1fa7b2c5eaa92a59d4ffc57534f1c  Restore_Linux_Settings_v17beta.sh
 
 
@@ -316,6 +318,7 @@ Restore Version 16:		New restore options: Only fstab and only desktop links. Scr
 						/etc/fstab file with pluma, if you want.). Tested several times when moving from Mint 16 to 17.
 Restore Version 17:		Workaround for bug in tar command when using --wildcards function (owner not preserved). (Version 16 better
 						as soon as bug is fixed by tar maintainers.)
+Backup Version 12:		New version checks if all packages needed for the script to rum are available.
 
 						
 						
