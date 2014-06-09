@@ -74,7 +74,8 @@ Firefox and Thunderbird settings". Take a look at the provided screenshot.
 If you want to understand the scripts please visit the following websites:
 http://askubuntu.com/questions/9135/best-way-to-backup-all-settings-list-of-installed-packages-tweaks-etc
 http://www.techradar.com/news/software/operating-systems/the-pain-free-guide-to-switching-linux-distros-478667
-http://askubuntu.com/questions/9135/best-way-to-backup-all-settings-list-of-installed-packages-tweaks-etc
+http://ubuntuforums.org/showthread.php?t=1057608&highlight=dselect-upgrade
+http://kvz.io/blog/2007/08/03/restore-packages-using-dselectupgrade/
 http://debiananwenderhandbuch.de/dpkg.html
 http://community.linuxmint.com/tutorial/view/2
 http://www.gnu.org/software/coreutils/manual/html_node/cp-invocation.html
@@ -271,9 +272,11 @@ b4a02af468c5b9e85c630395010bb62c  Restore_Linux_Settings_v10beta.sh (obsolete)
 c3059db72688899a342b85b5a6c08009  Restore_Linux_Settings_v14beta.sh (obsolete)
 f0c9161c6f77d23a927eb46546e7026a  Restore_Linux_Settings_v16beta.sh (ok, but tar --wildcards issue)
 6f8cb78a8a66b7521c7e2678d8da0040  Backup_Linux_Settings_v11.sh (obsolete)
+16d1fa7b2c5eaa92a59d4ffc57534f1c  Restore_Linux_Settings_v17beta.sh (obsolete)
+4000a1989f398a81341eb9618a83721a  Backup_Linux_Settings_v12.sh (obsolete)
 
-4000a1989f398a81341eb9618a83721a  Backup_Linux_Settings_v12.sh
-16d1fa7b2c5eaa92a59d4ffc57534f1c  Restore_Linux_Settings_v17beta.sh
+1b28b30a677447ebc4b13d07812e33d8  Backup_Linux_Settings_v13.sh
+d06bbb274a7a902212b8a22f6fa23165  Restore_Linux_Settings_v18beta.sh
 
 
 
@@ -320,8 +323,11 @@ Restore Version 16:		New restore options: Only fstab and only desktop links. Scr
 Restore Version 17:		Workaround for bug in tar command when using --wildcards function (owner not preserved). (Version 16 better
 						as soon as bug is fixed by tar maintainers.)
 Backup Version 12:		New version checks if all packages needed for the script to rum are available.
-
+Backup Version 13:		Added apt to programs to check for before starting
+Restore Version 18:		Checks for required packages before it starts. Replaced "pluma" with "xdg-open" in case someone is using a
+						different editor then pluma (needed for assisting with fstab update).
 						
+
 						
 
 9.) Identified bugs of FORMER versions
