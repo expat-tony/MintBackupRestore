@@ -95,6 +95,8 @@ http://readwrite.com/2013/10/02/github-for-beginners-part-2#awesm=~oEBUQPMUDkYjD
 http://linux.die.net/man/1/tar
 http://tukaani.org/lzma/benchmarks.html
 http://www.servercobra.com/bash-check-if-package-is-installed/
+http://stackoverflow.com/questions/125281/how-do-i-remove-the-file-suffix-and-path-portion-from-a-path-string-in-bash
+http://serverfault.com/questions/7503/how-to-determine-if-a-bash-variable-is-empty
 
 
 
@@ -274,10 +276,11 @@ f0c9161c6f77d23a927eb46546e7026a  Restore_Linux_Settings_v16beta.sh (ok, but tar
 6f8cb78a8a66b7521c7e2678d8da0040  Backup_Linux_Settings_v11.sh (obsolete)
 16d1fa7b2c5eaa92a59d4ffc57534f1c  Restore_Linux_Settings_v17beta.sh (obsolete)
 4000a1989f398a81341eb9618a83721a  Backup_Linux_Settings_v12.sh (obsolete)
+d06bbb274a7a902212b8a22f6fa23165  Restore_Linux_Settings_v18beta.sh (obsolete)
+1b28b30a677447ebc4b13d07812e33d8  Backup_Linux_Settings_v13.sh (obsolete)
 
-1b28b30a677447ebc4b13d07812e33d8  Backup_Linux_Settings_v13.sh
-d06bbb274a7a902212b8a22f6fa23165  Restore_Linux_Settings_v18beta.sh
-
+f006c4b64f66c5bc8a101e0d688d4d3c  Backup_Linux_Settings_v14.sh
+bef07d8ea58cedfb44ca68504549445e  Restore_Linux_Settings_v19beta.sh
 
 
 
@@ -327,7 +330,9 @@ Backup Version 13:		Added apt to programs to check for before starting
 Restore Version 18:		Checks for required packages before it starts. Replaced "pluma" with "xdg-open" in case someone is using a
 						different editor then pluma (needed for assisting with fstab update).
 						
-
+Backup_Linux_Settings_v14.sh:		Small changes in the wording of some echo's 
+Restore_Linux_Settings_v19beta:		"Only restore Thunderbird settings" now completely works without tar's --wildcard option 
+									(thus owners and rights of home and user folder stay untouched).
 						
 
 9.) Identified bugs of FORMER versions
@@ -391,8 +396,13 @@ The script restores some files using the --wildcards option of tar. Unfortunatel
 tar command doesn't preserve the owners despite the -p option is activated.
 Example for restoring only the desktop:
 7za x -so $FILENAME | tar xpf - -C $temp_dir --wildcards "home/*/Desktop/*"
-Bug has been reported to GNU.
-Version 17 of the script tries to avoid the --wildcards function as much as possible.
+Bug has been reported to GNU. THIS BUG ONLY EFFECTS THE RESTORE SCRIPT NOT THE BACKUP SCRIPT.
+
+
+Version 17 of the restore script tries to avoid the TAR --wildcards function as much as possible.
+
+Restore_Linux_Settings_v19beta currently only uses wildcards for "Only restore Firefox AND Thunderbird settings"
+all other restore options are OK. The "Only restore Firefox AND Thunderbird settings" option will be fixed ASAP.
 
 
 
