@@ -97,6 +97,7 @@ http://tukaani.org/lzma/benchmarks.html
 http://www.servercobra.com/bash-check-if-package-is-installed/
 http://stackoverflow.com/questions/125281/how-do-i-remove-the-file-suffix-and-path-portion-from-a-path-string-in-bash
 http://serverfault.com/questions/7503/how-to-determine-if-a-bash-variable-is-empty
+http://anwendungsentwickler.ws/blog/kategorien/linux/bash-and-or-in-if-abfragen.html
 
 
 
@@ -278,9 +279,10 @@ f0c9161c6f77d23a927eb46546e7026a  Restore_Linux_Settings_v16beta.sh (ok, but tar
 4000a1989f398a81341eb9618a83721a  Backup_Linux_Settings_v12.sh (obsolete)
 d06bbb274a7a902212b8a22f6fa23165  Restore_Linux_Settings_v18beta.sh (obsolete)
 1b28b30a677447ebc4b13d07812e33d8  Backup_Linux_Settings_v13.sh (obsolete)
+bef07d8ea58cedfb44ca68504549445e  Restore_Linux_Settings_v19beta.sh (obsolete)
 
 f006c4b64f66c5bc8a101e0d688d4d3c  Backup_Linux_Settings_v14.sh
-bef07d8ea58cedfb44ca68504549445e  Restore_Linux_Settings_v19beta.sh
+ea1184d0d7e5ea929c9923e44e41dd56  Restore_Linux_Settings_v20beta.sh
 
 
 
@@ -307,32 +309,34 @@ stay unchanged.
  
 8.) Changes between the versions
 ------------------------------------------------------------------------------------ 
-Restore Versions 1-9:	New options for restoring were added step by step (Firefox only, Thunderbird only). Based on zip-format.
-Backup Versions 1-4:	Some minor changes. Based on zip format.
-Backup Version 10:		Major change from version 9. Completely new backup format (.tar.7zip). 
-						Not compatible with former format, but the change was necessary.
-Restore Version 10: 	Major change from version 9. Completely new backup format (.tar.7zip). 
-						A little more conservative when restoring. All other options stay unchanged.
-						New option (request from user) restore everything without home.
-Restore Version 12:		Fixed issue that the script didn't initiate the restore process (still included exit command 
-						after restoring into temp directory for debugging). Included new option to restore only selected settings
-						without home folder. This is important if you keep your home folder on a separate partition anyway.
-Restore Version 13:		Some minor fixes after testing all different restore options on Mint 16 (some weren't working). 
-						Script can be started by double clicking on it + run in terminal. Will automatically prompt for sudo.
-Backup Version 11:		Script can be started by double clicking on it + run in terminal. Will automatically prompt for sudo
-Restore Version 16:		New restore options: Only fstab and only desktop links. Script now offers assistance to set up fstab.	
-						(it will still restore the old fstab but give you a list of current correct UUIDs and opens the restored
-						/etc/fstab file with pluma, if you want.). Tested several times when moving from Mint 16 to 17.
-Restore Version 17:		Workaround for bug in tar command when using --wildcards function (owner not preserved). (Version 16 better
-						as soon as bug is fixed by tar maintainers.)
-Backup Version 12:		New version checks if all packages needed for the script to rum are available.
-Backup Version 13:		Added apt to programs to check for before starting
-Restore Version 18:		Checks for required packages before it starts. Replaced "pluma" with "xdg-open" in case someone is using a
-						different editor then pluma (needed for assisting with fstab update).
+Restore Versions 1-9:			New options for restoring were added step by step (Firefox only, Thunderbird only). Based on zip-format.
+Backup Versions 1-4:			Some minor changes. Based on zip format.
+Backup Version 10:				Major change from version 9. Completely new backup format (.tar.7zip). 
+								Not compatible with former format, but the change was necessary.
+Restore Version 10: 			Major change from version 9. Completely new backup format (.tar.7zip). 
+								A little more conservative when restoring. All other options stay unchanged.
+								New option (request from user) restore everything without home.
+Restore Version 12:				Fixed issue that the script didn't initiate the restore process (still included exit command 
+								after restoring into temp directory for debugging). Included new option to restore only selected settings
+								without home folder. This is important if you keep your home folder on a separate partition anyway.
+Restore Version 13:				Some minor fixes after testing all different restore options on Mint 16 (some weren't working). 
+								Script can be started by double clicking on it + run in terminal. Will automatically prompt for sudo.
+Backup Version 11:				Script can be started by double clicking on it + run in terminal. Will automatically prompt for sudo
+Restore Version 16:				New restore options: Only fstab and only desktop links. Script now offers assistance to set up fstab.	
+								(it will still restore the old fstab but give you a list of current correct UUIDs and opens the restored
+								/etc/fstab file with pluma, if you want.). Tested several times when moving from Mint 16 to 17.
+Restore Version 17:				Workaround for bug in tar command when using --wildcards function (owner not preserved). (Version 16 better
+								as soon as bug is fixed by tar maintainers.)
+Backup Version 12:				New version checks if all packages needed for the script to rum are available.
+Backup Version 13:				Added apt to programs to check for before starting
+Restore Version 18:				Checks for required packages before it starts. Replaced "pluma" with "xdg-open" in case someone is using a
+								different editor then pluma (needed for assisting with fstab update).
 						
 Backup_Linux_Settings_v14.sh:		Small changes in the wording of some echo's 
 Restore_Linux_Settings_v19beta:		"Only restore Thunderbird settings" now completely works without tar's --wildcard option 
 									(thus owners and rights of home and user folder stay untouched).
+Restore_Linux_Settings_v20beta.sh:	 "Only restore desktop icons" option now also fully without wildcard option of tar. --> owners are maintained
+									 of home and user folder during restore process.
 						
 
 9.) Identified bugs of FORMER versions
@@ -402,7 +406,8 @@ Bug has been reported to GNU. THIS BUG ONLY EFFECTS THE RESTORE SCRIPT NOT THE B
 Version 17 of the restore script tries to avoid the TAR --wildcards function as much as possible.
 
 Restore_Linux_Settings_v19beta currently only uses wildcards for "Only restore Firefox AND Thunderbird settings"
-all other restore options are OK. The "Only restore Firefox AND Thunderbird settings" option will be fixed ASAP.
+and restore desktop settings all other restore options are OK. The "Only restore Firefox AND Thunderbird settings" 
+option will be fixed ASAP.
 
 
 
