@@ -281,11 +281,11 @@ d06bbb274a7a902212b8a22f6fa23165  Restore_Linux_Settings_v18beta.sh (obsolete)
 1b28b30a677447ebc4b13d07812e33d8  Backup_Linux_Settings_v13.sh (obsolete)
 bef07d8ea58cedfb44ca68504549445e  Restore_Linux_Settings_v19beta.sh (obsolete)
 ea1184d0d7e5ea929c9923e44e41dd56  Restore_Linux_Settings_v20beta.sh (obsolete)
+f006c4b64f66c5bc8a101e0d688d4d3c  Backup_Linux_Settings_v14.sh (obsolete)
+64d2cc11ae716642b26d55de5ebf8882  Restore_Linux_Settings_v21beta.sh (obsolete)
 
-
-f006c4b64f66c5bc8a101e0d688d4d3c  Backup_Linux_Settings_v14.sh
-64d2cc11ae716642b26d55de5ebf8882  Restore_Linux_Settings_v21beta.sh
-
+332f8009b1e5fa9323bfb2e161264022  Backup_Linux_Settings_v15.sh
+96f71e33106c373fc51e93d60340bb7d  Restore_Linux_Settings_v22beta.sh
 
 
 7.) Upgrading from Linux Mint 16 to Mint 17 (experience)
@@ -339,8 +339,9 @@ Restore_Linux_Settings_v19beta:		"Only restore Thunderbird settings" now complet
 									(thus owners and rights of home and user folder stay untouched).
 Restore_Linux_Settings_v20beta.sh:	 "Only restore desktop icons" option now also fully without wildcard option of tar. --> owners are maintained
 									 of home and user folder during restore process.
-Restore_Linux_Settings_v21beta.sh:	Clean up of some parts of the code (e.g., fstab help part)		
-
+Restore_Linux_Settings_v21beta.sh:	Clean up of some parts of the code (e.g., fstab help part)	
+Restore_Linux_Settings_v22beta.sh:	removed some "" marks at wrong position when restoring just Thunderbird or Desktop settings. Check for apt before proceeding with checking other packages.
+Backup_Linux_Settings_v15.sh:		Check for apt before proceeding with checking other packages.
 
 
 
@@ -416,6 +417,7 @@ Restore_Linux_Settings_v19beta currently only uses wildcards for "Only restore F
 and restore desktop settings all other restore options are OK. The "Only restore Firefox AND Thunderbird settings" 
 option will be fixed ASAP.
 
+Restore_Linux_Settings_v21beta.sh:	Had some "" marks at wrong position when restoring just Thunderbird or Desktop settings. --> restore process did not work correctly.
 
 
 
