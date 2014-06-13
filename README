@@ -283,9 +283,11 @@ bef07d8ea58cedfb44ca68504549445e  Restore_Linux_Settings_v19beta.sh (obsolete)
 ea1184d0d7e5ea929c9923e44e41dd56  Restore_Linux_Settings_v20beta.sh (obsolete)
 f006c4b64f66c5bc8a101e0d688d4d3c  Backup_Linux_Settings_v14.sh (obsolete)
 64d2cc11ae716642b26d55de5ebf8882  Restore_Linux_Settings_v21beta.sh (obsolete)
+96f71e33106c373fc51e93d60340bb7d  Restore_Linux_Settings_v22beta.sh (obsolete)
 
 332f8009b1e5fa9323bfb2e161264022  Backup_Linux_Settings_v15.sh
-96f71e33106c373fc51e93d60340bb7d  Restore_Linux_Settings_v22beta.sh
+6f59e03170f0a2d069e8a2c87b21c001  Restore_Linux_Settings_v23beta.sh
+
 
 
 7.) Upgrading from Linux Mint 16 to Mint 17 (experience)
@@ -342,6 +344,8 @@ Restore_Linux_Settings_v20beta.sh:	 "Only restore desktop icons" option now also
 Restore_Linux_Settings_v21beta.sh:	Clean up of some parts of the code (e.g., fstab help part)	
 Restore_Linux_Settings_v22beta.sh:	removed some "" marks at wrong position when restoring just Thunderbird or Desktop settings. Check for apt before proceeding with checking other packages.
 Backup_Linux_Settings_v15.sh:		Check for apt before proceeding with checking other packages.
+Restore_Linux_Settings_v23beta.sh:  Complete script is 100% free from tar's --wildcard option. "Only Restore Thunderbird and Firefox settings" 
+									now also fully keeps owners and rights. 
 
 
 
@@ -402,7 +406,7 @@ a new UUID. All other settings in the fstab will stay correct. Otherwise you wil
 get an error message upon booting. Even though the system still boots normally.
 Since version 16 of the restore script the script helps you to make the correct UUID settings. 
 
-++++Version 16 restore script:
+ Version 16 restore script:
 Not a bug in the scripts but of tar (http://www.gnu.org/software/tar/).
 The script restores some files using the --wildcards option of tar. Unfortunately, then the 
 tar command doesn't preserve the owners despite the -p option is activated.
@@ -411,13 +415,18 @@ Example for restoring only the desktop:
 Bug has been reported to GNU. THIS BUG ONLY EFFECTS THE RESTORE SCRIPT NOT THE BACKUP SCRIPT.
 
 
-Version 17 of the restore script tries to avoid the TAR --wildcards function as much as possible.
+++++Version 17 of the restore script:
+ tries to avoid the TAR --wildcards function as much as possible.
 
 Restore_Linux_Settings_v19beta currently only uses wildcards for "Only restore Firefox AND Thunderbird settings"
 and restore desktop settings all other restore options are OK. The "Only restore Firefox AND Thunderbird settings" 
 option will be fixed ASAP.
 
 Restore_Linux_Settings_v21beta.sh:	Had some "" marks at wrong position when restoring just Thunderbird or Desktop settings. --> restore process did not work correctly.
+
+Since version 23beta, no bugs identified.
+"Only restore Firefox AND Thunderbird settings" 
+option was fixed.
 
 
 
