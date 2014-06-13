@@ -10,6 +10,8 @@ Overview:
 7.) Upgrading from Linux Mint 16 to Mint 17 (experience)
 8.) Changes between the versions
 9.) Identified bugs of former versions
+10.) How can I report bugs or rate this project?
+11.) Can I join the project or help with scripting?
 
 
 1.) Introduction: For what are these scripts good for?
@@ -428,5 +430,21 @@ Since version 23beta, no bugs identified.
 "Only restore Firefox AND Thunderbird settings" 
 option was fixed.
 
+
+
+10.) How can I report bugs or rate this project?
+------------------------------------------------------------------------------------ 
+Please send me an email or even better, write a post on this forum, so everyone is informed immediately if
+you find any mistake in the code:
+
+http://forums.linuxmint.com/viewtopic.php?f=42&t=167083&p=870406&hilit=mint+backup+restore#p870406
+
+
+
+
+11.) Can I join the project or help with scripting?
+------------------------------------------------------------------------------------ 
+Of course you can, just write me an Email and I'll give you a call. It is a lot of work maintaining
+even a small project like this. A team approach would be better and four eyes see more then one.
 
 
