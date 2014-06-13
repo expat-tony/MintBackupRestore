@@ -1,6 +1,6 @@
 #!/bin/bash
 #########################################################################################################
-# Restore_Linux_Settings V.21beta: Restore Linux Mint settings from >>Backup_Linux_Settings<< script.	#                                          	
+# Restore_Linux_Settings V.22beta: Restore Linux Mint settings from >>Backup_Linux_Settings<< script.	#                                          	
 #                                                                         								#
 # Copyright (C) 2014 Bastian Noller                                       								#
 # email: bastian.noller[-A.T.-]web.de                                     								#
@@ -119,7 +119,7 @@ echo ""
 ## fetch linux version and start interactive restore process
 current_version=$(lsb_release -d | sed -n 's/Description:[\t]//p' | tr " " _)
 echo "#########################################################"
-echo "This is Version 21beta of the Restore Script"
+echo "This is Version 22beta of the Restore Script"
 echo "#########################################################"
 echo "Detected Linux Version:"
 echo $current_version
