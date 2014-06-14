@@ -1,4 +1,4 @@
-12th of June, 2014
+14th of June, 2014
 Overview:
 
 1.) Introduction: For what are these scripts good for?
@@ -286,10 +286,10 @@ ea1184d0d7e5ea929c9923e44e41dd56  Restore_Linux_Settings_v20beta.sh (obsolete)
 f006c4b64f66c5bc8a101e0d688d4d3c  Backup_Linux_Settings_v14.sh (obsolete)
 64d2cc11ae716642b26d55de5ebf8882  Restore_Linux_Settings_v21beta.sh (obsolete)
 96f71e33106c373fc51e93d60340bb7d  Restore_Linux_Settings_v22beta.sh (obsolete)
+6f59e03170f0a2d069e8a2c87b21c001  Restore_Linux_Settings_v23beta.sh (obsolete)
 
 332f8009b1e5fa9323bfb2e161264022  Backup_Linux_Settings_v15.sh
-6f59e03170f0a2d069e8a2c87b21c001  Restore_Linux_Settings_v23beta.sh
-
+1b4d584717e4ed4de51ce01326dcab4a  Restore_Linux_Settings_v24beta.sh
 
 
 7.) Upgrading from Linux Mint 16 to Mint 17 (experience)
@@ -349,7 +349,7 @@ Backup_Linux_Settings_v15.sh:		Check for apt before proceeding with checking oth
 Restore_Linux_Settings_v23beta.sh:  Complete script is 100% free from tar's --wildcard option. "Only Restore Thunderbird and Firefox settings" 
 									now also fully keeps owners and rights. 
 
-
+Restore_Linux_Settings_v24beta.sh: Added new restore option: "Only restore cronjobs (Anachron and Cron)".
 
 				
 
