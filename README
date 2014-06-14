@@ -43,7 +43,7 @@ Script which restores these "settings" into your new freshly installed Linux Min
 	 backup script). In my case this is "/media/Daten/Linux_Backup/". Please don't make
 	 the mistake to backup into the same partition you will install the new Linux version
 	 later on.
- d.) start the script in your terminal with > bash Backup_Linux_Settings_v11.sh
+ d.) start the script in your terminal with > bash Backup_Linux_Settings_v15.sh
      Please make sure you are in the same folder as the script is.
 	 
 a.), b.), c.) you only have to do once in your life. d.) you do every time you want to backup
@@ -54,7 +54,7 @@ a.), b.), c.) you only have to do once in your life. d.) you do every time you w
  b.) modify the folder were you have stored your backups (source). You can find this setting in 
 	 line 32 of the restore script. Note you only should define the path (e.g. "/media/Daten/Linux_Backup/")
 	 and NOT the file (e.g., do NOT do: "/media/Daten/Linux_Backup/mybackup.zip")
- c.) start the script in your terminal with > bash Restore_Linux_Settings_v17beta.sh
+ c.) start the script in your terminal with > bash Restore_Linux_Settings_v25stable.sh
      Please make sure you are in the same folder as the script is. Also take a look at the screenshot
 	 provided.
  d.) follow the directions on the screen. Also take a look at the screenshot provided.
