@@ -9,11 +9,11 @@ or here
 
 http://www.gnu.org/licenses/
 
-This license applies for >>Restore_Linux_Settings V.6.0beta<< as well as >>Backup_Linux_Settings V.4.0<< and all of its
-upcoming versions.
+This license applies for >>Restore_Linux_Settings V.24.0beta<< as well as >>Backup_Linux_Settings V.15.0<< and all of its
+upcoming and older versions.
 
 #################################################################################
-# Backup_Linux_Settings V.10.0: Makes a zip file of you Linux Mint settings	#
+# Backup_Linux_Settings V.15.0: Makes a tar.7tip file of you Linux Mint settings	#
 #										#
 # Copyright (C) 2014 Bastian Noller						#
 # email: bastian.noller[-A.T.-]web.de						#
@@ -35,7 +35,7 @@ upcoming versions.
 #################################################################################
 
 #########################################################################################################
-# Restore_Linux_Settings V.13.0beta: Restore Linux Mint settings from >>Backup_Linux_Settings<< script.	#
+# Restore_Linux_Settings V.24.0beta: Restore Linux Mint settings from >>Backup_Linux_Settings<< script.	#
 #                               	   								#
 # Copyright (C) 2014 Bastian Noller            								#
 # email: bastian.noller[-A.T.-]web.de          								#
