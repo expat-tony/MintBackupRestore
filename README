@@ -287,14 +287,15 @@ f006c4b64f66c5bc8a101e0d688d4d3c  Backup_Linux_Settings_v14.sh (obsolete)
 64d2cc11ae716642b26d55de5ebf8882  Restore_Linux_Settings_v21beta.sh (obsolete)
 96f71e33106c373fc51e93d60340bb7d  Restore_Linux_Settings_v22beta.sh (obsolete)
 6f59e03170f0a2d069e8a2c87b21c001  Restore_Linux_Settings_v23beta.sh (obsolete)
+1b4d584717e4ed4de51ce01326dcab4a  Restore_Linux_Settings_v24beta.sh (obsolete)
 
 332f8009b1e5fa9323bfb2e161264022  Backup_Linux_Settings_v15.sh
-1b4d584717e4ed4de51ce01326dcab4a  Restore_Linux_Settings_v24beta.sh
+2eb5fbc5116130ede0dd36985c42377c  Restore_Linux_Settings_v25stable.sh
 
 
 7.) Upgrading from Linux Mint 16 to Mint 17 (experience)
 ------------------------------------------------------------------------------------ 
-+++No real bugs or issues currently reported with current versions of the scripts.
++++ No real bugs or issues currently reported with current versions of the scripts.
 +++ When restoring your former fstab please note: If you install the new
 Mint version into the same partition as your former Linux distribution,
 Linux Mint 17 will format that partition. By doing this it changes the UUID of
@@ -308,6 +309,13 @@ a list of current correct UUIDs and opens the restored /etc/fstab file with plum
 if you want.)
 +++ Since version 10 of the backup restore/scripts all rights and owners of the files
 stay unchanged.
++++ When selecting the "restore selected settings option" at the very end the script 
+tries to help you to set up your fstab. There can be an error message: 
+"Pluma can not export display=0.0". This is not critical. The script can not call 
+pluma because it has been updated to current version and has to be rebootet first.
+Just open the fstab by hand using pluma.
++++ the script also updates all packages to current version (this will take some time).
+But you would also have to do this with the package manager of Mint anyway.
 
 
  
@@ -348,8 +356,8 @@ Restore_Linux_Settings_v22beta.sh:	removed some "" marks at wrong position when 
 Backup_Linux_Settings_v15.sh:		Check for apt before proceeding with checking other packages.
 Restore_Linux_Settings_v23beta.sh:  Complete script is 100% free from tar's --wildcard option. "Only Restore Thunderbird and Firefox settings" 
 									now also fully keeps owners and rights. 
-
 Restore_Linux_Settings_v24beta.sh: Added new restore option: "Only restore cronjobs (Anachron and Cron)".
+Restore_Linux_Settings_v25stable.sh: Tested several times when moving from Mint 16 to 17. No more bugs identified. Additional comments added.
 
 				
 
@@ -429,6 +437,13 @@ Restore_Linux_Settings_v21beta.sh:	Had some "" marks at wrong position when rest
 Since version 23beta, no bugs identified.
 "Only restore Firefox AND Thunderbird settings" 
 option was fixed.
+
+++++ Restore_Linux_Settings_v25stable.sh:
+NOT a BUG but a hint: When selecting the "restore selected settings option" at the very end the script 
+tries to help you to set up your fstab. There CAN be an error message: 
+"Pluma can not export display=0.0". This is not critical. The script can not call 
+pluma because it has been updated to current version and has to be rebootet first.
+Just open the fstab by hand using pluma.
 
 
 
