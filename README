@@ -291,7 +291,9 @@ f006c4b64f66c5bc8a101e0d688d4d3c  Backup_Linux_Settings_v14.sh (obsolete)
 1b4d584717e4ed4de51ce01326dcab4a  Restore_Linux_Settings_v24beta.sh (obsolete)
 332f8009b1e5fa9323bfb2e161264022  Backup_Linux_Settings_v15.sh (obsolete but stable)
 
+
 2eb5fbc5116130ede0dd36985c42377c  Restore_Linux_Settings_v25stable.sh
+d7e7927e7ddf0814a5cb8700b973bde0  Restore_Linux_Settings_v26beta.sh
 0c04c81233434c5f93a9fc1e1ec079d7  Backup_Linux_Settings_v16beta.sh
 
 
@@ -361,7 +363,7 @@ Restore_Linux_Settings_v23beta.sh:  Complete script is 100% free from tar's --wi
 Restore_Linux_Settings_v24beta.sh:	Added new restore option: "Only restore cronjobs (Anachron and Cron)".
 Restore_Linux_Settings_v25stable.sh:Tested several times when moving from Mint 16 to 17. No more bugs identified. Additional comments added.
 Backup_Linux_Settings_v16beta.sh:	Output in bash more colorful, fixed some typos :-)
-				
+Restore_Linux_Settings_v26beta.sh:	Output in bash more colorful, fixed some typos :-)			
 
 9.) Identified bugs of FORMER versions
 ------------------------------------------------------------------------------------ 
