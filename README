@@ -1,4 +1,4 @@
-14th of June, 2014
+19th of June, 2014
 Overview:
 
 1.) Introduction: For what are these scripts good for?
@@ -100,6 +100,7 @@ http://www.servercobra.com/bash-check-if-package-is-installed/
 http://stackoverflow.com/questions/125281/how-do-i-remove-the-file-suffix-and-path-portion-from-a-path-string-in-bash
 http://serverfault.com/questions/7503/how-to-determine-if-a-bash-variable-is-empty
 http://anwendungsentwickler.ws/blog/kategorien/linux/bash-and-or-in-if-abfragen.html
+https://wiki.archlinux.org/index.php/Color_Bash_Prompt
 
 
 
@@ -288,9 +289,10 @@ f006c4b64f66c5bc8a101e0d688d4d3c  Backup_Linux_Settings_v14.sh (obsolete)
 96f71e33106c373fc51e93d60340bb7d  Restore_Linux_Settings_v22beta.sh (obsolete)
 6f59e03170f0a2d069e8a2c87b21c001  Restore_Linux_Settings_v23beta.sh (obsolete)
 1b4d584717e4ed4de51ce01326dcab4a  Restore_Linux_Settings_v24beta.sh (obsolete)
+332f8009b1e5fa9323bfb2e161264022  Backup_Linux_Settings_v15.sh (obsolete but stable)
 
-332f8009b1e5fa9323bfb2e161264022  Backup_Linux_Settings_v15.sh
 2eb5fbc5116130ede0dd36985c42377c  Restore_Linux_Settings_v25stable.sh
+0c04c81233434c5f93a9fc1e1ec079d7  Backup_Linux_Settings_v16beta.sh
 
 
 7.) Upgrading from Linux Mint 16 to Mint 17 (experience)
@@ -356,9 +358,9 @@ Restore_Linux_Settings_v22beta.sh:	removed some "" marks at wrong position when 
 Backup_Linux_Settings_v15.sh:		Check for apt before proceeding with checking other packages.
 Restore_Linux_Settings_v23beta.sh:  Complete script is 100% free from tar's --wildcard option. "Only Restore Thunderbird and Firefox settings" 
 									now also fully keeps owners and rights. 
-Restore_Linux_Settings_v24beta.sh: Added new restore option: "Only restore cronjobs (Anachron and Cron)".
-Restore_Linux_Settings_v25stable.sh: Tested several times when moving from Mint 16 to 17. No more bugs identified. Additional comments added.
-
+Restore_Linux_Settings_v24beta.sh:	Added new restore option: "Only restore cronjobs (Anachron and Cron)".
+Restore_Linux_Settings_v25stable.sh:Tested several times when moving from Mint 16 to 17. No more bugs identified. Additional comments added.
+Backup_Linux_Settings_v16beta.sh:	Output in bash more colorful, fixed some typos :-)
 				
 
 9.) Identified bugs of FORMER versions
